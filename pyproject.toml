@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dwi-minimal"
+version = "0.1.0"
+description = "Minimal diffraction inversion and sequential medium-property analysis for zero-offset GPR/LPR"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "DWI minimal contributors"}]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+gprmax = ["h5py>=3.8"]
+cuda = ["cupy-cuda12x"]
+
+[project.scripts]
+dwi = "dwi.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dwi*"]
