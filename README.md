@@ -1,5 +1,3 @@
-# Minimal diffraction inversion and sequential medium-property analysis
-
 This folder contains a compact, self-contained implementation of the diffraction-inversion and property sequential analysis for article: `**Diffraction wavefront-driven inversion of Chang’E-4 Lunar Penetrating Radar data for high-resolution subsurface structure imaging**`
 
 The workflow follows the manuscript pipeline:
